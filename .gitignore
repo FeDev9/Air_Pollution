@@ -103,9 +103,17 @@ dist
 # TernJS port file
 .tern-port
 
+<<<<<<< HEAD
 #Mac logs
 .DS_Store
 
 #API Keys 
 config.js
 
+=======
+# Mac Logs
+.DS_Store
+
+#Api Keys
+config.js
+>>>>>>> 95fe43f437c57d72cc18da8bc514608d7dce95c2
