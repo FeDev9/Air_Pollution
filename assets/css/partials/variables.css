@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--merriwheather), sans-serif;
+}
+
+/*CSS variables*/
+:root {
+    --primary-color: #6A4F60;
+    --primary-color2:#54C1Fb;
+    --title-color: #272848;
+    --text-color: #6c6d8a;
+    --border-color: #6c6d8a;
+    --gradient-color: linear-gradient(to right,#5A4C5C,#BB7577,#B4ADA3);
+    --shadow-color: 0px 10px 30px rgba(118,85,225,0.3);
+    --box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+
+/*font-family variables*/
+    --merriwheather:'Merriwheather';
+}

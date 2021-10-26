@@ -1,0 +1,243 @@
+/* imports font from fonts.css file*/
+@import url(./fonts.css);
+
+/* import variables from variables.css file*/
+@import url(./partials/variables.css);
+
+/*import global rules */    
+@import url(./partials/_global.css);
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(/assets/img/background-page.jpg);
+    background-position: center;
+
+}
+
+.container {
+    background-color: white;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.container header {
+    color: #6A4F60;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 16px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bfbfbf;
+    
+}
+header i{
+    font-size: 0em;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.container.active header i{
+    margin-left: 5px;
+    font-size: 30px;
+  }
+
+  .container .input-part{
+    margin: 20px 25px 30px;
+  }
+
+.container.active .input-part{
+    display: none;
+  }
+
+.container .input-part{
+   /* display: none; */
+    margin: 20px 25px 30px;
+}
+
+.input-part .info-txt{
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    font-style: oblique;
+    padding: 12px 10px;
+    border-radius: 15px;
+    margin: 15px 0;
+    display: none;
+}
+
+.info-txt.error{
+    display: block;
+    color: #721c25;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.info-txt.pending{
+    display: block;
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border: 1px solid #bee5eb;
+}
+
+.container .input-part input,
+.container .input-part button{
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+
+}
+
+.container .input-part input {
+    border: 1px solid #bfbfbf;
+    text-align: center;
+}
+
+.input-part input:focus,
+.input-part input:valid{
+    border: 1px solid var(--primary-color);
+}
+
+.input-part .separator{
+    margin: 25px 0;
+    width: 100%;
+    color: #fff;
+    background: var(--gradient-color);
+    height: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.separator::before{
+    content: "or";
+    color: var(--primary-color);
+    background-color: white;
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+.container .input-part button{
+    background-image: var(--gradient-color);
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.container .pollution-part{
+    margin: 30px 0 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container.active .pollution-part{
+    display: flex;
+  }
+
+.pollution-part img{
+    max-width: 125px;
+}
+
+.pollution-part .grade{
+    display: flex;
+    font-size: 72px;
+}
+.pollution-part .grade .num{
+    font-weight: 600;
+}
+
+.pollution-part .grade .PM{
+    font-size: 25px;
+    display: block;
+    margin: 45px 5px 0 0;
+}
+
+.pollution-part .grade .val{
+    font-size: 15px;
+    display: block;
+    margin:55px 5px 0 0;
+}
+
+.pollution-part .grade-name {
+    font-size: 21px;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+.pollution-part .location{
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.location i{
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+.pollution-part .bottom-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #bfbfbf;
+    padding: 20px 0;
+}
+
+.bottom-details .column{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divider{
+    width: 2px;
+    background-color:#bfbfbf;
+    height: 50px;
+}
+.column i, .temperature i{
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.details span, .temperature span{
+    font-size: 20px;
+}
+
+.pollution-part .temperature{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #bfbfbf;
+    padding: 20px 0;
+}
+
+.details .grade .PM{
+    margin:0;
+    font-size: 15px;
+    margin: 5px 0 0 0;
+}
+
+.details .grade .val{
+    margin: 0;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.bottom-details .column i.first{
+    font-size: 30px;
+}
+
+.bottom-details .column i.last{
+    font-size: 20px;
+}
