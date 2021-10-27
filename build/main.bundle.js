@@ -1,0 +1,1 @@
+!async function(){const n=await fetch("/.netlify/functions/lambda");await n.json(),console.log(n)}();
