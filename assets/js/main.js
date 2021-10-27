@@ -1,14 +1,13 @@
-import API_KEY from "./assets/js/apikey";
+require('dotenv').config();
+console.log(process.env);
 
-
- const container = document.body.querySelector(".container"),
+key = process.env.API_KEY;
+const container = document.querySelector(".container"),
 inputPart = container.querySelector(".input-part"),
 infoTxt = inputPart.querySelector(".info-txt"),
 inputField = inputPart.querySelector("input"),
 locationBtn = inputPart.querySelector("button"),
 img = document.querySelector(".pollution-part img");
-
-
 
 inputField.addEventListener("keyup", e => {
     //if user pressed enter btn and input value is not empty
@@ -30,7 +29,7 @@ function onSuccess(position){
     infoTxt.innerText = "Getting pollution details...";
     infoTxt.classList.add("pending");
     const {latitude, longitude} = position.coords;
-    api = `https://api.waqi.info/feed/geo:${latitude};${longitude}/?token=${API_KEY}`;
+    api = `https://api.waqi.info/feed/geo:${latitude};${longitude}/?token=${key}`;
     fetchData();
 }
 
@@ -42,7 +41,7 @@ function onError(error){
 
 
 function requestApi(city){
-    api=`https://api.waqi.info/feed/${city}/?token=${API_KEY}`;
+    api=`https://api.waqi.info/feed/${city}/?token=${key}`;
     fetchData();
     
 }
