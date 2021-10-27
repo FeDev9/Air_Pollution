@@ -108,3 +108,5 @@ dist
 
 #API Keys 
 config.js
+
+netlify/
