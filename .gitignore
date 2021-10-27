@@ -106,9 +106,4 @@ dist
 #Mac logs
 .DS_Store
 
-#API Keys 
-config.js
-
-netlify/
-# Local Netlify folder
-.netlify
+apikey.js

@@ -1,17 +1,6 @@
-async function requestPollutionData() {
-    // la nostra chiave è al sicuro nelle Environment Variables
-    const API_KEY = process.env.API_KEY
-  
-    // la parola chiave è await: è quella che dice a JS di fermarsi a questa riga finchè la fetch API non restituisce il risultato della richiesta
-    const response = await fetch(`/* ... */${API_KEY}`) // non scriverò COME fare la richiesta, va capito dalla documentazione https://aqicn.org/json-api/doc/
-    const data = await response.json()
-  
-    console.log(data) // facciamo ciò che vogliamo con i dati ottenuti: scelta, elaborazione, visualizzazione..
-  }
-  
-  requestPollutionData() 
+import API_KEY from "apikey.js";
 
-const container = document.body.querySelector(".container"),
+ const container = document.body.querySelector(".container"),
 inputPart = container.querySelector(".input-part"),
 infoTxt = inputPart.querySelector(".info-txt"),
 inputField = inputPart.querySelector("input"),
@@ -40,7 +29,7 @@ function onSuccess(position){
     infoTxt.innerText = "Getting pollution details...";
     infoTxt.classList.add("pending");
     const {latitude, longitude} = position.coords;
-    api = `https://api.waqi.info/feed/geo:${latitude};${longitude}/?token=${process.env.API_KEY}`;
+    api = `https://api.waqi.info/feed/geo:${latitude};${longitude}/?token=${API_KEY}`;
     fetchData();
 }
 
@@ -52,7 +41,7 @@ function onError(error){
 
 
 function requestApi(city){
-    api=`https://api.waqi.info/feed/${city}/?token=${process.env.API_KEY}`;
+    api=`https://api.waqi.info/feed/${city}/?token=${API_KEY}`;
     fetchData();
     
 }
@@ -113,5 +102,3 @@ document.querySelector(".container header i").addEventListener("click",()=> {
     container.classList.remove("active");
     inputField.value ="";
 })
-
- 
