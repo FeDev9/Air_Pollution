@@ -1,4 +1,5 @@
-import API_KEY from "apikey.js";
+import API_KEY from "./assets/js/apikey";
+
 
  const container = document.body.querySelector(".container"),
 inputPart = container.querySelector(".input-part"),
