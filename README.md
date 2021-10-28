@@ -121,5 +121,5 @@ Project Link: [https://github.com/fedev9/counter](https://github.com/fedev9/air_
 [license-url]: https://github.com/fedev9/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/federico-cecconi-27951619a/
-[product-screenshot]: img/input.png
-[above-screenshot]: img/details.png
+[product-screenshot]: assets/img/input.png
+[above-screenshot]: assets/img/details.png
