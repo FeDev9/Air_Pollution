@@ -104,7 +104,7 @@ Don't forget to give the project a star! Thanks again!
 ## Contact
 Linkedin: [@FedericoCecconi](https://www.linkedin.com/in/federico-cecconi-27951619a/)
 
-Project Link: [https://github.com/fedev9/counter](https://github.com/fedev9/air_pollution)
+Project Link: [https://github.com/fedev9/air_pollution](https://github.com/fedev9/air_pollution)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
