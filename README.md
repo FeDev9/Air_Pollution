@@ -59,7 +59,7 @@ It was created using Javascript and AQICN's API.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Insert your API key in .env.example file and rename the file .env .
+Insert your API key in .env.sample file and rename the file .env .
 
 
 
