@@ -1,7 +1,7 @@
 require('dotenv').config();
-console.log(process.env);
-
 key = process.env.API_KEY;
+
+
 const container = document.querySelector(".container"),
 inputPart = container.querySelector(".input-part"),
 infoTxt = inputPart.querySelector(".info-txt"),
